@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="8">
+        <Button android:id="@+id/btn3" android:layout_width="match_parent" android:layout_height="40dp" android:text="주소 확인하기"/>
+        <TextView android:textSize="20dp" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Address"/>
+        <Button android:id="@+id/button" android:layout_width="match_parent" android:layout_height="40dp" android:text="Search"/>
+    </LinearLayout>
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

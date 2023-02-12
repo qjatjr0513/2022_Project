@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_centerInParent="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivProfile" android:background="@drawable/pngegg" android:layout_width="98dp" android:layout_height="103dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textviewUserEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text=""/>
+        <Button android:layout_gravity="center" android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="지도"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/buttonLogout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="로그아웃"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textviewDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="회원탈퇴 합니다."/>
+    </LinearLayout>
+</RelativeLayout>

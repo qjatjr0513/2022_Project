@@ -1,0 +1,217 @@
+package com.google.protobuf;
+
+import com.google.protobuf.Internal;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.RandomAccess;
+
+final class BooleanArrayList extends AbstractProtobufList<Boolean> implements Internal.BooleanList, RandomAccess, PrimitiveNonBoxingCollection {
+    private static final BooleanArrayList EMPTY_LIST;
+    private boolean[] array;
+    private int size;
+
+    static {
+        BooleanArrayList booleanArrayList = new BooleanArrayList(new boolean[0], 0);
+        EMPTY_LIST = booleanArrayList;
+        booleanArrayList.makeImmutable();
+    }
+
+    public static BooleanArrayList emptyList() {
+        return EMPTY_LIST;
+    }
+
+    BooleanArrayList() {
+        this(new boolean[10], 0);
+    }
+
+    private BooleanArrayList(boolean[] other, int size2) {
+        this.array = other;
+        this.size = size2;
+    }
+
+    /* access modifiers changed from: protected */
+    public void removeRange(int fromIndex, int toIndex) {
+        ensureIsMutable();
+        if (toIndex >= fromIndex) {
+            boolean[] zArr = this.array;
+            System.arraycopy(zArr, toIndex, zArr, fromIndex, this.size - toIndex);
+            this.size -= toIndex - fromIndex;
+            this.modCount++;
+            return;
+        }
+        throw new IndexOutOfBoundsException("toIndex < fromIndex");
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof BooleanArrayList)) {
+            return super.equals(o);
+        }
+        BooleanArrayList other = (BooleanArrayList) o;
+        if (this.size != other.size) {
+            return false;
+        }
+        boolean[] arr = other.array;
+        for (int i = 0; i < this.size; i++) {
+            if (this.array[i] != arr[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        int result = 1;
+        for (int i = 0; i < this.size; i++) {
+            result = (result * 31) + Internal.hashBoolean(this.array[i]);
+        }
+        return result;
+    }
+
+    public Internal.BooleanList mutableCopyWithCapacity(int capacity) {
+        if (capacity >= this.size) {
+            return new BooleanArrayList(Arrays.copyOf(this.array, capacity), this.size);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public Boolean get(int index) {
+        return Boolean.valueOf(getBoolean(index));
+    }
+
+    public boolean getBoolean(int index) {
+        ensureIndexInRange(index);
+        return this.array[index];
+    }
+
+    public int indexOf(Object element) {
+        if (!(element instanceof Boolean)) {
+            return -1;
+        }
+        boolean unboxedElement = ((Boolean) element).booleanValue();
+        int numElems = size();
+        for (int i = 0; i < numElems; i++) {
+            if (this.array[i] == unboxedElement) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean contains(Object element) {
+        return indexOf(element) != -1;
+    }
+
+    public int size() {
+        return this.size;
+    }
+
+    public Boolean set(int index, Boolean element) {
+        return Boolean.valueOf(setBoolean(index, element.booleanValue()));
+    }
+
+    public boolean setBoolean(int index, boolean element) {
+        ensureIsMutable();
+        ensureIndexInRange(index);
+        boolean[] zArr = this.array;
+        boolean previousValue = zArr[index];
+        zArr[index] = element;
+        return previousValue;
+    }
+
+    public boolean add(Boolean element) {
+        addBoolean(element.booleanValue());
+        return true;
+    }
+
+    public void add(int index, Boolean element) {
+        addBoolean(index, element.booleanValue());
+    }
+
+    public void addBoolean(boolean element) {
+        ensureIsMutable();
+        int i = this.size;
+        boolean[] zArr = this.array;
+        if (i == zArr.length) {
+            boolean[] newArray = new boolean[(((i * 3) / 2) + 1)];
+            System.arraycopy(zArr, 0, newArray, 0, i);
+            this.array = newArray;
+        }
+        boolean[] zArr2 = this.array;
+        int i2 = this.size;
+        this.size = i2 + 1;
+        zArr2[i2] = element;
+    }
+
+    private void addBoolean(int index, boolean element) {
+        int i;
+        ensureIsMutable();
+        if (index < 0 || index > (i = this.size)) {
+            throw new IndexOutOfBoundsException(makeOutOfBoundsExceptionMessage(index));
+        }
+        boolean[] zArr = this.array;
+        if (i < zArr.length) {
+            System.arraycopy(zArr, index, zArr, index + 1, i - index);
+        } else {
+            boolean[] newArray = new boolean[(((i * 3) / 2) + 1)];
+            System.arraycopy(zArr, 0, newArray, 0, index);
+            System.arraycopy(this.array, index, newArray, index + 1, this.size - index);
+            this.array = newArray;
+        }
+        this.array[index] = element;
+        this.size++;
+        this.modCount++;
+    }
+
+    public boolean addAll(Collection<? extends Boolean> collection) {
+        ensureIsMutable();
+        Internal.checkNotNull(collection);
+        if (!(collection instanceof BooleanArrayList)) {
+            return super.addAll(collection);
+        }
+        BooleanArrayList list = (BooleanArrayList) collection;
+        int i = list.size;
+        if (i == 0) {
+            return false;
+        }
+        int i2 = this.size;
+        if (Integer.MAX_VALUE - i2 >= i) {
+            int newSize = i2 + i;
+            boolean[] zArr = this.array;
+            if (newSize > zArr.length) {
+                this.array = Arrays.copyOf(zArr, newSize);
+            }
+            System.arraycopy(list.array, 0, this.array, this.size, list.size);
+            this.size = newSize;
+            this.modCount++;
+            return true;
+        }
+        throw new OutOfMemoryError();
+    }
+
+    public Boolean remove(int index) {
+        ensureIsMutable();
+        ensureIndexInRange(index);
+        boolean[] zArr = this.array;
+        boolean value = zArr[index];
+        int i = this.size;
+        if (index < i - 1) {
+            System.arraycopy(zArr, index + 1, zArr, index, (i - index) - 1);
+        }
+        this.size--;
+        this.modCount++;
+        return Boolean.valueOf(value);
+    }
+
+    private void ensureIndexInRange(int index) {
+        if (index < 0 || index >= this.size) {
+            throw new IndexOutOfBoundsException(makeOutOfBoundsExceptionMessage(index));
+        }
+    }
+
+    private String makeOutOfBoundsExceptionMessage(int index) {
+        return "Index:" + index + ", Size:" + this.size;
+    }
+}

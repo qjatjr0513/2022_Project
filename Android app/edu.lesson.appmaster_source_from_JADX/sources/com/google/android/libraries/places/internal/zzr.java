@@ -1,0 +1,9 @@
+package com.google.android.libraries.places.internal;
+
+/* compiled from: com.google.android.libraries.places:places@@2.5.0 */
+public enum zzr {
+    NONE,
+    PSK,
+    EAP,
+    OTHER
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="40sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="50dp" android:text="GPS"/>
+    <Button android:layout_gravity="center" android:id="@+id/btnConnect" android:layout_width="300dp" android:layout_height="50dp" android:text="연결"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="40sp" android:gravity="center_horizontal" android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="80dp" android:text="위도"/>
+    <TextView android:textSize="50sp" android:gravity="center_horizontal" android:id="@+id/Lat" android:layout_width="match_parent" android:layout_height="80dp" android:inputType="numberDecimal"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="40sp" android:gravity="center_horizontal" android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="80dp" android:text="경도"/>
+    <TextView android:textSize="50sp" android:gravity="center_horizontal" android:id="@+id/Long" android:layout_width="match_parent" android:layout_height="80dp" android:inputType="numberDecimal"/>
+    <Button android:layout_gravity="center" android:id="@+id/btnSend" android:layout_width="300dp" android:layout_height="50dp" android:text="전송"/>
+</LinearLayout>
