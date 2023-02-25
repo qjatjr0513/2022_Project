@@ -44,4 +44,24 @@
   <img src="https://user-images.githubusercontent.com/80880587/221353883-32b17762-c947-493a-a281-6b5595104b9b.jpg" width="300px" height="500px"/>
   <img src="https://user-images.githubusercontent.com/80880587/221353898-dfe62bba-a990-48c6-bb1e-7409125e8474.jpg" width="300px" height="500px"/>
 </div>
+## :computer: 개발환경
+### :computer: 사용 언어
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white" />	
+  <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" />
+	<img src="https://img.shields.io/badge/C++-#00599C?style=flat&logo=C++&logoColor=white" />
+</div>
+### :computer: 사용 장치 및 프로그램
+<div>
+  <img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=flat&logo=Raspberry Pi&logoColor=white" />	
+	<img src="https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat&logo=Android&logoColor=white" />
+	<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=Android Studio&logoColor=white" />
+</div>
+### :computer: 서버 통신
+<div>
+	<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white" />
+</div>
+
+## :computer: 작품 영상 (이미지 클릭)
 [![Video Label](http://img.youtube.com/vi/-bFfsAX0tb0/maxresdefault.jpg)](https://youtu.be/-bFfsAX0tb0)
