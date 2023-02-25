@@ -26,6 +26,6 @@
 </table>
 
 ## 시스템 구성도
-<img src="https://user-images.githubusercontent.com/80880587/221352810-30fa8f42-b4b7-477a-ba96-fc1e3cf9c3c9.png"/>
+<img src="https://user-images.githubusercontent.com/80880587/221352810-30fa8f42-b4b7-477a-ba96-fc1e3cf9c3c9.png" width="500px" height="200px"/>
 
 [![Video Label](http://img.youtube.com/vi/-bFfsAX0tb0/maxresdefault.jpg)](https://youtu.be/-bFfsAX0tb0)
