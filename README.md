@@ -28,4 +28,20 @@
 ## 시스템 구성도
 <img src="https://user-images.githubusercontent.com/80880587/221352810-30fa8f42-b4b7-477a-ba96-fc1e3cf9c3c9.png" width="500px" height="200px"/>
 
+## 실제 시스템 설계
+### 얼굴인식 장치
+<img src="https://user-images.githubusercontent.com/80880587/221353259-ced25a8c-8455-478f-8399-44c3e94b0087.png" width="250px" height="200px"/>
+
+### 실시간 GPS 장치
+<img src="https://user-images.githubusercontent.com/80880587/221353364-cb4eb340-4aee-4d7b-9dd7-e904fd865453.png" width="350px" height="200px"/>
+
+### 연동 어플
+<div>
+  <img src="https://user-images.githubusercontent.com/80880587/221353728-92bc43b4-a128-4440-9cd3-9e4dc2b87503.png" width="300px" height="500px"/>
+  <img src="https://user-images.githubusercontent.com/80880587/221353779-17975021-1289-4998-85b8-75804da78849.jpg" width="300px" height="500px"/>
+  <img src="https://user-images.githubusercontent.com/80880587/221353819-a54d7003-8be0-45ee-b351-81deb4b789d3.jpg" width="300px" height="500px"/>
+  <img src="https://user-images.githubusercontent.com/80880587/221353841-e20ad8c0-2288-4b7c-8adc-9aa1c5b35911.jpg" width="300px" height="500px"/>
+  <img src="https://user-images.githubusercontent.com/80880587/221353883-32b17762-c947-493a-a281-6b5595104b9b.jpg" width="300px" height="500px"/>
+  <img src="https://user-images.githubusercontent.com/80880587/221353898-dfe62bba-a990-48c6-bb1e-7409125e8474.jpg" width="300px" height="500px"/>
+</div>
 [![Video Label](http://img.youtube.com/vi/-bFfsAX0tb0/maxresdefault.jpg)](https://youtu.be/-bFfsAX0tb0)
