@@ -65,6 +65,7 @@
 ### :computer: 서버 통신
 <div>
 	<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white" />
+	<img src="https://img.shields.io/badge/Lora-00A98F?style=flat&logo=Lora&logoColor=white" />
 </div>
 
 ## :computer: 작품 영상 (이미지 클릭)
