@@ -4,7 +4,7 @@
 ## 시스템 구성
 <table>
   <tbody>
-  <td></td>
+  <td>![image01](https://user-images.githubusercontent.com/80880587/221352555-67cd99a1-fe15-41a5-86f5-72525800ad2d.png)</td>
   <td></td>
   </tbody>
   <tbody>
