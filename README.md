@@ -5,7 +5,7 @@
    <tr><td>이름</td><td>GitHub</td>
    <tr><td>이범석</td><td><a href="https://github.com/qjatjr0513">@qjatjr0513</a></td></tr>
    <tr><td>장민석</td><td><a href="https://github.com/97minseok">@97minseok</a></td></tr>
-   <tr><td>윤현희</td><td><a href="https://github.com/Lee-sang-yeop"></a></td></tr>
+   <tr><td>윤현희</td><td><a href="https://github.com/yoonhh">@yoonhh</a></td></tr>
    </table>
    
 ## 프로젝트 기획의도
