@@ -68,4 +68,5 @@
 </div>
 
 ## :computer: 작품 영상 (이미지 클릭)
-[![Video Label](https://user-images.githubusercontent.com/80880587/221354360-d17904a1-47b7-42dc-9cb3-0a306f0fb457.png)(https://youtu.be/-bFfsAX0tb0)
+[![Video Label](https://user-images.githubusercontent.com/80880587/221354360-d17904a1-47b7-42dc-9cb3-0a306f0fb457.png)](https://youtu.be/-bFfsAX0tb0)
+
