@@ -44,6 +44,7 @@
   <img src="https://user-images.githubusercontent.com/80880587/221353883-32b17762-c947-493a-a281-6b5595104b9b.jpg" width="300px" height="500px"/>
   <img src="https://user-images.githubusercontent.com/80880587/221353898-dfe62bba-a990-48c6-bb1e-7409125e8474.jpg" width="300px" height="500px"/>
 </div>
+
 ## :computer: 개발환경
 
 ### :computer: 사용 언어
@@ -67,4 +68,4 @@
 </div>
 
 ## :computer: 작품 영상 (이미지 클릭)
-[![Video Label](http://img.youtube.com/vi/-bFfsAX0tb0/maxresdefault.jpg)](https://youtu.be/-bFfsAX0tb0)
+[![Video Label](https://user-images.githubusercontent.com/80880587/221354360-d17904a1-47b7-42dc-9cb3-0a306f0fb457.png)
