@@ -66,6 +66,9 @@
   <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white" />
 </div>
 
+### :computer: 라이브러리
+ <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=OpenCV&logoColor=white" />
+
 ### :computer: 사용 장치 및 프로그램
 <div>
   	<img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=flat&logo=Raspberry Pi&logoColor=white" />	
